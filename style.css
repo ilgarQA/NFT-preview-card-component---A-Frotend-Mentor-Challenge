@@ -1,0 +1,122 @@
+h1{
+    line-height: 2;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+}
+
+/* Utility */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+#line{
+    border-top: 1px solid #828181;
+    width: 100%;
+}
+
+.margin {
+    margin-top: 0.1rem;
+}
+
+/* Typography */
+.title{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.title, span{
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.title:hover, span:hover{
+    color: hsl(178, 100%, 50%) ;
+}
+
+.balance_amount{
+    color: hsl(178, 100%, 50%);
+}
+
+/* Layout */
+.container{
+    height: 100dvh;
+}
+
+.card{
+    max-width: 18em;
+    margin-inline: auto;
+
+}
+
+/* General Styling */
+.card{
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.card_image{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+    padding: 43%;
+    opacity: 0;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.balance_amount{
+    gap: .4rem;
+}
+
+.balance_data{
+    gap: .4rem;
+}
+
+.balance{
+    justify-content: space-between;
+}
+
+.balance_date{
+    margin-left: auto;
+}
+
+.creator_info{
+    gap: .5rem;
+}
+
+.creator_image{
+    max-width: 2em;
+    border: 2px solid color rgb(255, 255, 255);
+}
+
+hr{
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(216, 50%, 16%);
+}
